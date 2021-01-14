@@ -16,7 +16,7 @@ num = eval(input())
 
 for i in range(1, num + 1):
     for j in "2019":
-    #if '2' in str(i) or '0' in str(i) or '1' in str(i) or '9' in str(i):
+        # if '2' in str(i) or '0' in str(i) or '1' in str(i) or '9' in str(i):
         if j in str(i):
             ans += i
             break
