@@ -11,13 +11,13 @@
 请问，在 1 到 n 中，所有这样的数的和是多少？
 """
 
-result = 0
+ans = 0
 num = eval(input())
 
 for i in range(1, num + 1):
     for j in "2019":
     #if '2' in str(i) or '0' in str(i) or '1' in str(i) or '9' in str(i):
         if j in str(i):
-            result += i
+            ans += i
             break
-print(result)
+print(ans)
