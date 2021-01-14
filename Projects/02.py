@@ -13,18 +13,19 @@
 现在小明有一块矩形的材料，两边长分别是 2019 和 324。请问小明最终会切出多少个 正方形？
 """
 
-num = 0
+ans = 0
 a = 2019
 b = 324
 
-while a != b:
+while True:
     if a > b:
         a -= b
-        num += 1
+        ans += 1
     elif b > a:
         b -= a
-        num += 1
-    # if a == b:
-    #     break
+        ans += 1
+    if a == b:
+        ans += 1
+        break
 
-print(num)
+print(ans)
